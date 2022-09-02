@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<style>
+     *{
+     box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  
+  
+  background-color: #f1f1f1;
+  
+  
+  
+}
+button{
+  font-family:'Times New Roman', Times, serif;
+}
+img{
+  width:100px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+</style>
+<body>
+    <div class="row">
+        <div class="column">
+          <div class="card"><img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone-xs-colors.jpg" style="width:48%">iphone X</div>
+          <button type="menu">lookout</button></div>
+        <div class="column"> 
+          <div class="card"><img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone-xr/identify-iphone-xr-colors.jpg" style="width:54%">iphone Xr</div>
+          <button type="submit">lookout</button></div>
+        <div class="column">
+          <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLO5J-UEM42AxX04JlyoAOaj_NhfnYe1VzsyytoMe_UOHVnKvPxbqrAEjQQsZanl9IKZ0&usqp=CAU" style="width:42%">iphone 8</div>
+          <button type="reset">lookout</button></div>
+        <div class="column">
+          <div class="card"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT-pTQZFPVr3R--iVAaiT0RFQNTAe-iZjMUQ6IrAKzGGolbu3Rn8TsVinfPhQImcoqVrQ&usqp=CAU" style="width:70%">iphone 13</div>
+          <button type="button">lookout</button></div>
+      </div>
+    
+</body>
+</html>
